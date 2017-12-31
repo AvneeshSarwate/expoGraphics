@@ -468,11 +468,13 @@ shaderText
   var time = gl.getUniformLocation(program, "time");
 
   var screenResU = gl.getUniformLocation(program, "resolution");
-  var div = 100;
+  var div = .5;
   gl.uniform2f(screenResU, win.width/div, win.height/div);
 
+  var timeVal = 0;
+
   function renderLoop() {
-    gl.uniform1f(time, (Math.sin(Date.now() * 0.001)+1)/2);
+    gl.uniform1f(time, timeVal += .2/6);
     //console.log(time);
     gl.drawArrays(gl.TRIANGLES, 0, verts.length / 2);
     gl.endFrameEXP();
