@@ -1,0 +1,16 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "create-react-app": "^1.4.3",
+    "expo": "^24.0.0",
+    "gl-react": "^3.13.0",
+    "gl-react-expo": "^3.6.0",
+    "react": "16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "install-peers": "^1.0.2"
+  },
+  "version": "4.6.1"
+}
